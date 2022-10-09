@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+           width: 100%;
+            margin: 0;
+
+            display: grid;
+
+            grid-template-rows: 30% 1fr  ;
+            grid-template-columns: 1fr  1fr  1fr 5%;
+
+            grid-template-areas: 
+            " border border border border"
+            "first second three . ";
+        }
+        .my_border{
+            grid-area:border;
+        }
+        .first_par{
+            width: 200px;
+            grid-area:first;
+        }
+        .second_par{
+            width: 200px;
+            grid-area: second;
+        }
+        .three_par{
+            width: 200px;
+            grid-area: three;
+
+        }
+
+    </style>
+  
+</head>
+<body>
+    <div>
+         <h1 class="my_border">MY BORDER</h1>
+         <div class="first_par">
+            <h1>TO DO</h1>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum atque a alias quam ut dolores debitis blanditiis omnis obcaecati, magnam aut quos similique. Nam, dolorum quam voluptatum dicta atque ipsum.
+            </div>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sit, quae illum expedita aliquam fugiat architecto ad vero tempora earum natus vitae eum consectetur repellendus ipsam odit dolore omnis voluptatum.</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptates odio non possimus officia eaque, consequuntur dignissimos laudantium dicta ex ducimus ullam nisi omnis cupiditate sit amet laborum? Maxime, reprehenderit.</div>
+        
+        </div>
+        <div class="second_par">
+            <h1>In Progress</h1>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequatur ratione ab quasi consectetur quia dolorem ea placeat, rem magnam labore, optio dolore atque, quod nisi ex magni porro qui?</div>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eum dolorum omnis alias ipsum odit consequatur numquam voluptatibus sunt aliquid reprehenderit tenetur laudantium id, fuga beatae totam cumque tempora vero.</div>
+        </div>
+        <div class="three_par">
+            <h1>Text</h1>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, saepe debitis dolorum illo ad hic modi minus repellendus ea amet fuga, sunt necessitatibus sequi aliquid eum, aut perspiciatis! Accusantium, nobis.</div>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quaerat similique soluta? Aliquid eaque, mollitia aperiam officia, dicta sed reiciendis blanditiis ratione nobis unde culpa sunt minus facilis nisi ea?</div>
+            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error ipsa vitae delectus porro labore qui in at, repudiandae quidem? Dolores, quis? Nostrum quae culpa earum cum odio modi maxime nobis!</div>
+        </div>
+
+    </div>
+   
+</body>
+</html>
